@@ -1,1 +1,76 @@
 .header
+  color: #696969
+  padding: 35px 0
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: stretch
+  a
+    color: #696969
+  .wrapper
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 0 7px
+    margin: 0 auto
+  &__content
+    display: grid
+    grid-auto-rows: 30px 30px
+    grid-auto-columns: 60px 400px
+  &__logo
+    width: 40px
+    height: 40px
+  &__address
+    grid-column: 2/3
+  &__email
+    grid-column: 2/3
+  &__contacts
+    display: grid
+    grid-auto-rows: 25px 25px
+    grid-auto-columns: 40px 155px
+    gap: 3px 6.5px
+  &__socials
+    width: 40px
+    height: 40px
+  &__phone
+    grid-column: 2/3
+
+
+  &__nav
+    width: 100%
+    padding: 0 110.5px
+    margin: 76px 0 35px
+    &-list
+      padding: 0
+      margin: 0 auto
+      list-style: none
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      gap: 90px
+    &-item
+      min-height: 30px
+      // min-width: 107px
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 40px
+      &.active,
+      &:hover
+        .header__nav-link
+          font-size: 25px
+          color: #5C6B31
+          text-decoration: none
+          border-bottom: 3px solid #5C6B31
+    &-link
